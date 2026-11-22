@@ -2317,10 +2317,11 @@ section,
 
 .kcc-brand img {
   display: block;
-  width: 160px;
-  height: auto;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
-  border-radius: 3px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .kcc-nav {
@@ -3275,10 +3276,11 @@ section,
 
 .kcc-footer-brand img {
   display: block;
-  width: 160px;
-  height: auto;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
-  border-radius: 3px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .kcc-footer-motto {
@@ -3413,7 +3415,8 @@ section,
   }
 
   .kcc-brand img {
-    width: 160px;
+    width: 76px;
+    height: 76px;
   }
 }
 
@@ -3423,8 +3426,8 @@ section,
   }
 
   .kcc-brand img {
-    width: 150px;
-    height: auto;
+    width: 68px;
+    height: 68px;
   }
 
   .kcc-menu-toggle {
@@ -3648,8 +3651,8 @@ section,
   }
 
   .kcc-brand img {
-    width: 140px;
-    height: auto;
+    width: 62px;
+    height: 62px;
   }
 
   .kcc-hero {
