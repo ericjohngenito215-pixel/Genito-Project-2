@@ -2244,3 +2244,1519 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* KCC landing page */
+.kcc-page {
+  --kcc-burgundy: #6d182b;
+  --kcc-burgundy-deep: #42101e;
+  --kcc-gold: #d7ad58;
+  --kcc-cream: #f8f5ee;
+  --kcc-ink: #292521;
+  --kcc-muted: #746e68;
+  --kcc-line: #e9e3d9;
+  color: var(--kcc-ink);
+  background: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+.kcc-page,
+.kcc-page * {
+  box-sizing: border-box;
+}
+
+.kcc-page h1,
+.kcc-page h2,
+.kcc-page h3,
+.kcc-page p,
+.kcc-page figure {
+  margin-top: 0;
+}
+
+.kcc-page h1,
+.kcc-page h2,
+.kcc-page h3 {
+  color: inherit;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.kcc-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kcc-page a:focus-visible,
+.kcc-page button:focus-visible {
+  outline: 3px solid var(--kcc-gold);
+  outline-offset: 4px;
+}
+
+.kcc-header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(62, 42, 30, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.kcc-header-inner {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.kcc-brand,
+.kcc-footer-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.kcc-brand img {
+  display: block;
+  width: 205px;
+  height: 66px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.kcc-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.kcc-nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 29px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kcc-nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 12px 0;
+  color: #39332e;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.kcc-nav-links a::after {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: var(--kcc-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.kcc-nav-links a:hover,
+.kcc-nav-links a:focus-visible {
+  color: var(--kcc-burgundy);
+}
+
+.kcc-nav-links a:hover::after,
+.kcc-nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.kcc-button {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kcc-button:hover {
+  transform: translateY(-2px);
+}
+
+.kcc-button-small {
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 13px;
+}
+
+.kcc-button-small,
+.kcc-button-gold {
+  color: var(--kcc-burgundy-deep) !important;
+  background: var(--kcc-gold);
+}
+
+.kcc-button-small:hover,
+.kcc-button-gold:hover {
+  background: #e7c779;
+  box-shadow: 0 8px 20px rgba(32, 15, 8, 0.16);
+}
+
+.kcc-menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--kcc-line);
+  border-radius: 4px;
+  color: var(--kcc-burgundy);
+  background: #fff;
+  font-size: 25px;
+}
+
+.kcc-hero {
+  position: relative;
+  display: flex;
+  min-height: min(760px, calc(100vh - 88px));
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background: var(--kcc-burgundy-deep);
+}
+
+.kcc-hero-image,
+.kcc-hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kcc-hero-image {
+  object-fit: cover;
+  object-position: center 47%;
+}
+
+.kcc-hero-shade {
+  background: linear-gradient(90deg, rgba(33, 12, 17, 0.86) 0%, rgba(51, 15, 24, 0.75) 42%, rgba(46, 18, 19, 0.2) 100%), linear-gradient(0deg, rgba(36, 12, 17, 0.23), rgba(36, 12, 17, 0.05));
+}
+
+.kcc-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+
+.kcc-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--kcc-burgundy);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.kcc-eyebrow::before {
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  content: "";
+  background: currentColor;
+}
+
+.kcc-eyebrow-light {
+  color: #f0cb78;
+}
+
+.kcc-hero h1 {
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-size: clamp(46px, 6.4vw, 78px);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+}
+
+.kcc-hero h1 em,
+.kcc-section-title em,
+.kcc-admissions h2 em {
+  color: var(--kcc-gold);
+  font-weight: 500;
+}
+
+.kcc-hero-lede {
+  max-width: 525px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.kcc-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.kcc-button-outline {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.kcc-button-outline:hover {
+  color: var(--kcc-burgundy-deep) !important;
+  border-color: #fff;
+  background: #fff;
+}
+
+.kcc-hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 88px;
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kcc-hero-scroll i {
+  color: var(--kcc-gold);
+}
+
+.kcc-hero-note {
+  position: absolute;
+  right: max(calc((100vw - 1140px) / 2), 5vw);
+  bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.kcc-hero-note i {
+  color: var(--kcc-gold);
+  font-size: 24px;
+}
+
+.kcc-section {
+  padding: 112px 0;
+  scroll-margin-top: 86px;
+}
+
+.kcc-about {
+  background: #fff;
+}
+
+.kcc-about-visual {
+  position: relative;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 0 35px 36px 0;
+}
+
+.kcc-about-visual::before {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  left: 35px;
+  border: 1px solid #e6d9c3;
+  content: "";
+}
+
+.kcc-about-visual > img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 20px 55px rgba(44, 32, 21, 0.12);
+}
+
+.kcc-about-stamp {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: -12px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--kcc-burgundy);
+  box-shadow: 0 8px 22px rgba(50, 20, 20, 0.18);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 13px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.kcc-about-stamp i {
+  color: var(--kcc-gold);
+  font-size: 16px;
+}
+
+.kcc-about-caption {
+  position: absolute;
+  right: 2px;
+  bottom: 11px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5e5147;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.kcc-caption-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--kcc-gold);
+}
+
+.kcc-section-title {
+  margin-bottom: 20px;
+  color: var(--kcc-ink);
+  font-size: clamp(36px, 4vw, 50px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.kcc-section-title em {
+  color: var(--kcc-burgundy);
+}
+
+.kcc-section-copy {
+  margin-bottom: 16px;
+  color: var(--kcc-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.kcc-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  color: var(--kcc-burgundy) !important;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.kcc-text-link i,
+.kcc-academic-card a i,
+.kcc-life-callout a i {
+  transition: transform 0.2s ease;
+}
+
+.kcc-text-link:hover i,
+.kcc-academic-card a:hover i,
+.kcc-life-callout a:hover i {
+  transform: translateX(4px);
+}
+
+.kcc-values-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin-top: 34px;
+  padding-top: 23px;
+  border-top: 1px solid var(--kcc-line);
+}
+
+.kcc-values-row > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #5b5148;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.kcc-values-row i {
+  color: var(--kcc-burgundy);
+  font-size: 21px;
+}
+
+.kcc-academics {
+  background: var(--kcc-cream);
+}
+
+.kcc-section-heading {
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.kcc-section-heading .kcc-eyebrow {
+  justify-content: center;
+}
+
+.kcc-section-heading .kcc-section-title {
+  margin-bottom: 14px;
+}
+
+.kcc-academic-cards {
+  max-width: 1070px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kcc-academic-card {
+  position: relative;
+  height: 100%;
+  min-height: 290px;
+  padding: 30px 28px;
+  overflow: hidden;
+  border: 1px solid #e8e0d4;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 9px 24px rgba(48, 34, 20, 0.035);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.kcc-academic-card:hover {
+  transform: translateY(-6px);
+  border-color: #d2b574;
+  box-shadow: 0 18px 34px rgba(48, 34, 20, 0.1);
+}
+
+.kcc-academic-card-featured {
+  color: #fff;
+  border-color: var(--kcc-burgundy);
+  background: var(--kcc-burgundy);
+}
+
+.kcc-card-icon {
+  display: flex;
+  width: 49px;
+  height: 49px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+  border-radius: 50%;
+  color: var(--kcc-burgundy);
+  background: #f4eddf;
+  font-size: 21px;
+}
+
+.kcc-academic-card-featured .kcc-card-icon {
+  color: var(--kcc-burgundy-deep);
+  background: var(--kcc-gold);
+}
+
+.kcc-card-number {
+  position: absolute;
+  top: 37px;
+  right: 28px;
+  color: #b8afa3;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.kcc-academic-card-featured .kcc-card-number {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.kcc-academic-card h3 {
+  margin-bottom: 12px;
+  color: inherit;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.kcc-academic-card p {
+  min-height: 72px;
+  margin-bottom: 18px;
+  color: var(--kcc-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.kcc-academic-card-featured p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.kcc-academic-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--kcc-burgundy) !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.kcc-academic-card-featured a {
+  color: var(--kcc-gold) !important;
+}
+
+.kcc-academic-note {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  margin: 25px 0 0;
+  color: #797168;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.kcc-academic-note i {
+  color: var(--kcc-burgundy);
+}
+
+.kcc-student-life {
+  background: #fff;
+}
+
+.kcc-life-heading {
+  margin-bottom: 39px;
+}
+
+.kcc-life-heading .kcc-section-title,
+.kcc-events-heading .kcc-section-title {
+  margin-bottom: 0;
+}
+
+.kcc-life-heading .kcc-section-copy,
+.kcc-events-heading .kcc-section-copy {
+  margin-bottom: 2px;
+}
+
+.kcc-life-gallery {
+  display: grid;
+  grid-template-columns: 1.08fr 0.9fr 0.78fr;
+  grid-template-rows: 225px 200px;
+  gap: 17px;
+}
+
+.kcc-life-photo {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #ddd4c6;
+}
+
+.kcc-life-photo-tall {
+  grid-row: 1 / span 2;
+}
+
+.kcc-life-photo-wide {
+  grid-column: 2 / span 2;
+}
+
+.kcc-life-photo-short {
+  grid-column: 2;
+}
+
+.kcc-life-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.kcc-life-photo:hover img {
+  transform: scale(1.055);
+}
+
+.kcc-life-photo::after {
+  position: absolute;
+  inset: 35% 0 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(30, 16, 13, 0.74), transparent);
+  pointer-events: none;
+}
+
+.kcc-life-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 19px;
+  bottom: 18px;
+  left: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kcc-life-photo figcaption i {
+  color: var(--kcc-gold);
+}
+
+.kcc-life-callout {
+  display: flex;
+  grid-column: 3;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 23px;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--kcc-burgundy);
+}
+
+.kcc-life-callout > i {
+  margin-bottom: 13px;
+  color: var(--kcc-gold);
+  font-size: 22px;
+}
+
+.kcc-life-callout p {
+  margin-bottom: 15px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.kcc-life-callout p em {
+  color: var(--kcc-gold);
+}
+
+.kcc-life-callout a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff !important;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.kcc-events {
+  background: var(--kcc-cream);
+}
+
+.kcc-events-heading {
+  margin-bottom: 37px;
+}
+
+.kcc-event-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 34px;
+  padding: 28px;
+  border: 1px solid #e9e0d4;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 16px 42px rgba(56, 38, 22, 0.06);
+}
+
+.kcc-event-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px 10px 15px 18px;
+}
+
+.kcc-event-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  color: var(--kcc-burgundy);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.kcc-event-card h3 {
+  margin-bottom: 12px;
+  color: var(--kcc-ink);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.kcc-event-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  color: #756d62;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kcc-event-date i {
+  color: var(--kcc-burgundy);
+}
+
+.kcc-event-description {
+  margin-bottom: 12px;
+  color: var(--kcc-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.kcc-event-photos {
+  display: grid;
+  min-height: 330px;
+  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.kcc-event-photo {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #e7dfd2;
+}
+
+.kcc-event-photo-main {
+  grid-row: 1 / span 2;
+}
+
+.kcc-event-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.kcc-event-photo:hover img {
+  transform: scale(1.04);
+}
+
+.kcc-event-photo > span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(55, 17, 26, 0.8);
+  font-size: 12px;
+}
+
+.kcc-event-update {
+  margin: 17px 0 0;
+  color: #797168;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.kcc-event-update i {
+  margin-right: 5px;
+  color: var(--kcc-burgundy);
+}
+
+.kcc-admissions {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: var(--kcc-burgundy);
+}
+
+.kcc-admissions-pattern {
+  position: absolute;
+  top: -160px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(244, 208, 131, 0.18);
+  border-radius: 50%;
+}
+
+.kcc-admissions-pattern::before,
+.kcc-admissions-pattern::after {
+  position: absolute;
+  border: 1px solid rgba(244, 208, 131, 0.12);
+  border-radius: 50%;
+  content: "";
+}
+
+.kcc-admissions-pattern::before {
+  inset: 35px;
+}
+
+.kcc-admissions-pattern::after {
+  inset: 75px;
+}
+
+.kcc-admissions-inner {
+  position: relative;
+  display: flex;
+  min-height: 275px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.kcc-admissions .kcc-eyebrow {
+  margin-bottom: 14px;
+}
+
+.kcc-admissions h2 {
+  margin-bottom: 12px;
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.kcc-admissions-inner > div > p:last-child {
+  max-width: 610px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.kcc-admissions .kcc-button {
+  flex: 0 0 auto;
+}
+
+.kcc-contact {
+  background: #fff;
+}
+
+.kcc-contact .kcc-section-copy {
+  max-width: 435px;
+}
+
+.kcc-contact-card {
+  display: flex;
+  max-width: 430px;
+  align-items: center;
+  gap: 15px;
+  margin-top: 27px;
+  padding: 16px 18px;
+  border: 1px solid var(--kcc-line);
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kcc-contact-card:hover {
+  border-color: #d5bd85;
+  box-shadow: 0 9px 24px rgba(48, 34, 20, 0.07);
+}
+
+.kcc-contact-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--kcc-burgundy);
+  background: #f4eddf;
+}
+
+.kcc-contact-card > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.kcc-contact-label {
+  color: #898176;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.kcc-contact-card a {
+  color: var(--kcc-ink) !important;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.kcc-contact-arrow {
+  color: var(--kcc-burgundy);
+}
+
+.kcc-contact-note {
+  max-width: 430px;
+  margin: 10px 0 0;
+  color: #8a8378;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.kcc-contact-visual {
+  position: relative;
+  padding: 0 0 22px 22px;
+}
+
+.kcc-contact-visual::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 0;
+  height: 76%;
+  border: 1px solid #e6d9c3;
+  content: "";
+}
+
+.kcc-contact-visual > img {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(44, 32, 21, 0.12);
+}
+
+.kcc-contact-visual-tag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--kcc-burgundy);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.kcc-contact-visual-tag i {
+  color: var(--kcc-gold);
+  font-size: 21px;
+}
+
+.kcc-footer {
+  padding: 65px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  background: #28151a;
+}
+
+.kcc-footer-brand img {
+  display: block;
+  width: 205px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.kcc-footer-motto {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.69);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.kcc-footer h2 {
+  margin-bottom: 17px;
+  color: var(--kcc-gold);
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.kcc-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kcc-footer li + li {
+  margin-top: 10px;
+}
+
+.kcc-footer li a,
+.kcc-footer-bottom a {
+  color: rgba(255, 255, 255, 0.71) !important;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.kcc-footer li a:hover,
+.kcc-footer-bottom a:hover {
+  color: var(--kcc-gold) !important;
+}
+
+.kcc-footer-note {
+  padding-left: 25px;
+  border-left: 1px solid rgba(215, 173, 88, 0.45);
+}
+
+.kcc-footer-note > i {
+  color: var(--kcc-gold);
+  font-size: 22px;
+}
+
+.kcc-footer-note p {
+  margin: 5px 0 3px;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.kcc-footer-note span {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 11px;
+}
+
+.kcc-footer-bottom {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 44px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.kcc-footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 11px;
+}
+
+.kcc-footer-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.kcc-back-to-top {
+  position: fixed;
+  z-index: 900;
+  right: 22px;
+  bottom: 22px;
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff !important;
+  background: var(--kcc-burgundy);
+  box-shadow: 0 8px 22px rgba(36, 14, 17, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.kcc-back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.kcc-back-to-top:hover {
+  background: var(--kcc-burgundy-deep);
+}
+
+@media (max-width: 1199px) {
+  .kcc-header-inner {
+    gap: 18px;
+  }
+
+  .kcc-nav {
+    gap: 19px;
+  }
+
+  .kcc-nav-links {
+    gap: 17px;
+  }
+
+  .kcc-nav-links a {
+    font-size: 12px;
+  }
+
+  .kcc-brand img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .kcc-header-inner {
+    min-height: 76px;
+  }
+
+  .kcc-brand img {
+    width: 190px;
+    height: 61px;
+  }
+
+  .kcc-menu-toggle {
+    display: inline-grid;
+    flex: 0 0 auto;
+    place-items: center;
+  }
+
+  .kcc-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    padding: 12px 24px 23px;
+    border-bottom: 1px solid var(--kcc-line);
+    background: #fff;
+    box-shadow: 0 18px 28px rgba(38, 25, 16, 0.11);
+  }
+
+  .kcc-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .kcc-nav-links {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .kcc-nav-links li + li {
+    border-top: 1px solid #f1ede7;
+  }
+
+  .kcc-nav-links a {
+    display: block;
+    padding: 12px 2px;
+    font-size: 14px;
+  }
+
+  .kcc-nav-links a::after {
+    display: none;
+  }
+
+  .kcc-nav-cta {
+    align-self: flex-start;
+  }
+
+  .kcc-hero {
+    min-height: 690px;
+  }
+
+  .kcc-hero-content {
+    padding-top: 85px;
+    padding-bottom: 110px;
+  }
+
+  .kcc-hero-note {
+    right: 5vw;
+    bottom: 28px;
+  }
+
+  .kcc-section {
+    padding: 88px 0;
+  }
+
+  .kcc-event-card {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .kcc-event-copy {
+    padding-left: 4px;
+  }
+
+  .kcc-event-photos {
+    min-height: 300px;
+  }
+
+  .kcc-footer-note {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .kcc-section {
+    padding: 72px 0;
+  }
+
+  .kcc-hero {
+    min-height: 660px;
+  }
+
+  .kcc-hero-image {
+    object-position: 58% center;
+  }
+
+  .kcc-hero-shade {
+    background: linear-gradient(90deg, rgba(33, 12, 17, 0.86), rgba(51, 15, 24, 0.48)), linear-gradient(0deg, rgba(36, 12, 17, 0.25), transparent);
+  }
+
+  .kcc-hero-content {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .kcc-hero h1 {
+    font-size: clamp(43px, 9.4vw, 63px);
+  }
+
+  .kcc-hero-lede {
+    max-width: 450px;
+    font-size: 15px;
+  }
+
+  .kcc-hero-scroll {
+    margin-top: 60px;
+  }
+
+  .kcc-hero-note {
+    display: none;
+  }
+
+  .kcc-about-visual {
+    max-width: 520px;
+  }
+
+  .kcc-about-visual > img {
+    height: 390px;
+  }
+
+  .kcc-section-heading {
+    margin-bottom: 34px;
+  }
+
+  .kcc-academic-card {
+    min-height: 0;
+  }
+
+  .kcc-academic-card p {
+    min-height: 0;
+  }
+
+  .kcc-life-heading {
+    margin-bottom: 28px;
+  }
+
+  .kcc-life-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 210px 200px;
+    gap: 12px;
+  }
+
+  .kcc-life-photo-tall {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+
+  .kcc-life-photo-wide {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .kcc-life-photo-short {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .kcc-life-callout {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+
+  .kcc-events-heading {
+    margin-bottom: 28px;
+  }
+
+  .kcc-event-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .kcc-event-copy {
+    padding: 6px 2px 0;
+  }
+
+  .kcc-event-photos {
+    min-height: 300px;
+  }
+
+  .kcc-admissions-inner {
+    min-height: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .kcc-contact-visual {
+    max-width: 620px;
+  }
+
+  .kcc-footer {
+    padding-top: 52px;
+  }
+
+  .kcc-footer-note {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kcc-header-inner {
+    min-height: 70px;
+  }
+
+  .kcc-brand img {
+    width: 170px;
+    height: 55px;
+  }
+
+  .kcc-hero {
+    min-height: 620px;
+  }
+
+  .kcc-hero-content {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+
+  .kcc-hero h1 {
+    font-size: 42px;
+  }
+
+  .kcc-hero-lede {
+    font-size: 14px;
+  }
+
+  .kcc-button {
+    min-height: 49px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  .kcc-button-small {
+    min-height: 42px;
+  }
+
+  .kcc-about-visual {
+    padding-right: 20px;
+    padding-bottom: 27px;
+  }
+
+  .kcc-about-visual > img {
+    height: 310px;
+  }
+
+  .kcc-about-stamp {
+    top: 20px;
+    left: -5px;
+    width: 82px;
+    height: 82px;
+    font-size: 11px;
+  }
+
+  .kcc-about-caption {
+    right: -1px;
+    bottom: 5px;
+    font-size: 9px;
+  }
+
+  .kcc-values-row {
+    gap: 15px;
+  }
+
+  .kcc-values-row > div {
+    font-size: 10px;
+  }
+
+  .kcc-life-gallery {
+    grid-template-rows: 230px 175px 185px;
+    gap: 9px;
+  }
+
+  .kcc-life-photo figcaption {
+    right: 11px;
+    bottom: 12px;
+    left: 11px;
+    font-size: 10px;
+  }
+
+  .kcc-life-callout {
+    padding: 19px;
+  }
+
+  .kcc-event-card {
+    padding: 15px;
+  }
+
+  .kcc-event-card h3 {
+    font-size: 26px;
+  }
+
+  .kcc-event-photos {
+    min-height: 235px;
+    gap: 7px;
+  }
+
+  .kcc-contact-visual-tag {
+    right: -2px;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .kcc-footer-bottom {
+    min-height: 80px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kcc-page *,
+  .kcc-page *::before,
+  .kcc-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

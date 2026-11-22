@@ -3,582 +3,291 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Mentor Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Kabankalan Catholic College: a welcoming, Christ-centered community for learning, faith formation, and service.">
+  <meta name="theme-color" content="#6d182b">
+  <title>Kabankalan Catholic College | Discover KCC</title>
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Mentor
-  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  * Updated: Jul 07 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Mentor</h1>
+<body class="kcc-page">
+  <header class="kcc-header">
+    <div class="container kcc-header-inner">
+      <a class="kcc-brand" href="#home" aria-label="Kabankalan Catholic College home">
+        <img src="assets/img/KCC-logo.jpg" alt="Kabankalan Catholic College">
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="trainers.html">Trainers</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+      <button class="kcc-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+
+      <nav class="kcc-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="kcc-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#student-life">Student Life</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <a class="kcc-button kcc-button-small kcc-nav-cta" href="#academics">Explore KCC <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
       </nav>
-
-      <a class="btn-getstarted" href="courses.html">Get Started</a>
-
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="courses.html" class="btn-get-started">Get Started</a>
+  <main>
+    <section class="kcc-hero" id="home" aria-labelledby="hero-title">
+      <img class="kcc-hero-image" src="assets/img/event/images%20(2).jpg" alt="Students gathered on the Kabankalan Catholic College campus">
+      <div class="kcc-hero-shade"></div>
+      <div class="container kcc-hero-content">
+        <p class="kcc-eyebrow kcc-eyebrow-light"><span></span> Kabankalan Catholic College</p>
+        <h1 id="hero-title">Discover Your Potential.<br><em>Build Your Future.</em></h1>
+        <p class="kcc-hero-lede">Find a community where learning, faith, and service come together—and take your next step with confidence.</p>
+        <div class="kcc-hero-actions">
+          <a class="kcc-button kcc-button-gold" href="#about">Discover KCC <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="kcc-button kcc-button-outline" href="#academics">Explore Programs</a>
         </div>
+        <a class="kcc-hero-scroll" href="#about"><span>Scroll to explore</span><i class="bi bi-arrow-down" aria-hidden="true"></i></a>
       </div>
+      <div class="kcc-hero-note"><i class="bi bi-book-half" aria-hidden="true"></i><span>Learn with purpose.<br>Grow with community.</span></div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
+    <section class="kcc-section kcc-about" id="about" aria-labelledby="about-title">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Counts Section -->
-    <section id="counts" class="section counts light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Students</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Courses</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Events</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Trainers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Counts Section -->
-
-    <!-- Why Us Section -->
-    <section id="why-us" class="section why-us">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Why Choose Our Products?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
-
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="col-xl-4">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Icon Box -->
-
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="kcc-about-visual">
+              <img src="assets/img/about.jpg" alt="Students learning together in a collaborative setting" loading="lazy">
+              <div class="kcc-about-stamp"><i class="bi bi-heart-fill" aria-hidden="true"></i><span>Faith<br>in action</span></div>
+              <div class="kcc-about-caption"><span class="kcc-caption-dot"></span> A community rooted in purpose</div>
             </div>
           </div>
-
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <p class="kcc-eyebrow">A place to belong</p>
+            <h2 class="kcc-section-title" id="about-title">Education with <em>heart</em> and purpose.</h2>
+            <p class="kcc-section-copy">Kabankalan Catholic College is a Christ-centered learning community. Its educational identity brings together academic excellence, faith formation, and service.</p>
+            <p class="kcc-section-copy">Here, your college journey is more than what you learn in class. It is also about the people you meet, the values you carry, and the difference you are ready to make.</p>
+            <a class="kcc-text-link" href="#student-life">Get to know our community <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <div class="kcc-values-row" aria-label="KCC's educational values">
+              <div><i class="bi bi-mortarboard" aria-hidden="true"></i><span>Academic<br>excellence</span></div>
+              <div><i class="bi bi-cross" aria-hidden="true"></i><span>Faith<br>formation</span></div>
+              <div><i class="bi bi-hands" aria-hidden="true"></i><span>Service<br>to others</span></div>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Why Us Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
+    <section class="kcc-section kcc-academics" id="academics" aria-labelledby="academics-title">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="features-item">
-              <i class="bi bi-eye" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">Lorem Ipsum</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="features-item">
-              <i class="bi bi-infinity" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">Dolor Sitema</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="features-item">
-              <i class="bi bi-mortarboard" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">Sed perspiciatis</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="features-item">
-              <i class="bi bi-nut" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">Magni Dolores</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="features-item">
-              <i class="bi bi-shuffle" style="color: #47aeff;"></i>
-              <h3><a href="" class="stretched-link">Nemo Enim</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="features-item">
-              <i class="bi bi-star" style="color: #ffa76e;"></i>
-              <h3><a href="" class="stretched-link">Eiusmod Tempor</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-            <div class="features-item">
-              <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
-              <h3><a href="" class="stretched-link">Midela Teren</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
-            <div class="features-item">
-              <i class="bi bi-camera-video" style="color: #4233ff;"></i>
-              <h3><a href="" class="stretched-link">Pira Neve</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
-            <div class="features-item">
-              <i class="bi bi-command" style="color: #b2904f;"></i>
-              <h3><a href="" class="stretched-link">Dirada Pack</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
-            <div class="features-item">
-              <i class="bi bi-dribbble" style="color: #b20969;"></i>
-              <h3><a href="" class="stretched-link">Moton Ideal</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
-            <div class="features-item">
-              <i class="bi bi-activity" style="color: #ff5828;"></i>
-              <h3><a href="" class="stretched-link">Verdo Park</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
-            <div class="features-item">
-              <i class="bi bi-brightness-high" style="color: #29cc61;"></i>
-              <h3><a href="" class="stretched-link">Flavor Nivelanda</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
+        <div class="kcc-section-heading text-center" data-aos="fade-up">
+          <p class="kcc-eyebrow">Learning that moves you forward</p>
+          <h2 class="kcc-section-title" id="academics-title">Find your <em>path</em>.</h2>
+          <p class="kcc-section-copy">Explore the next step in your education. For accurate, up-to-date program offerings, connect with KCC directly.</p>
         </div>
 
+        <div class="row g-4 kcc-academic-cards">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <article class="kcc-academic-card">
+              <div class="kcc-card-icon"><i class="bi bi-compass" aria-hidden="true"></i></div>
+              <span class="kcc-card-number">01</span>
+              <h3>Explore your options</h3>
+              <p>Discover which study path fits your interests, goals, and the future you want to shape.</p>
+              <a href="#contact" aria-label="Ask KCC about program options">Ask about programs <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="120">
+            <article class="kcc-academic-card kcc-academic-card-featured">
+              <div class="kcc-card-icon"><i class="bi bi-journal-bookmark" aria-hidden="true"></i></div>
+              <span class="kcc-card-number">02</span>
+              <h3>Review what you’ll learn</h3>
+              <p>Get the latest details about courses and curriculum from the college before you decide.</p>
+              <a href="#contact" aria-label="Contact KCC for current course information">Request course details <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="190">
+            <article class="kcc-academic-card">
+              <div class="kcc-card-icon"><i class="bi bi-chat-heart" aria-hidden="true"></i></div>
+              <span class="kcc-card-number">03</span>
+              <h3>Talk it through</h3>
+              <p>Have questions? Reach out to KCC for guidance on choosing a program and planning ahead.</p>
+              <a href="#contact" aria-label="Get in touch with KCC">Get guidance <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+          </div>
+        </div>
+        <p class="kcc-academic-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Program names and enrollment details are not listed here; please confirm current information with KCC.</p>
       </div>
+    </section>
 
-    </section><!-- /Features Section -->
-
-    <!-- Courses Section -->
-    <section id="courses" class="courses section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Courses</h2>
-        <p>Popular Courses</p>
-      </div><!-- End Section Title -->
-
+    <section class="kcc-section kcc-student-life" id="student-life" aria-labelledby="student-life-title">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="course-item">
-              <img src="assets/img/course/course-1.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Web Development</p>
-                  <p class="price">$169</p>
-                </div>
-
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Antonio</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;50
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;65
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="course-item">
-              <img src="assets/img/course/course-2.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Marketing</p>
-                  <p class="price">$250</p>
-                </div>
-
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-f-14.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Lana</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;42
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="course-item">
-              <img src="assets/img/course/course-3.webp" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Content</p>
-                  <p class="price">$180</p>
-                </div>
-
-                <h3><a href="course-details.html">Copywriting</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="">
-                    <a href="" class="trainer-link">Brandon</a>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;20
-                    &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;85
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
+        <div class="row align-items-end gy-3 kcc-life-heading" data-aos="fade-up">
+          <div class="col-lg-7">
+            <p class="kcc-eyebrow">More than the classroom</p>
+            <h2 class="kcc-section-title" id="student-life-title">A community to <em>grow in.</em></h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="kcc-section-copy">Learning happens in shared moments, campus gatherings, and the connections that stay with you.</p>
+          </div>
         </div>
-
+        <div class="kcc-life-gallery">
+          <figure class="kcc-life-photo kcc-life-photo-tall" data-aos="fade-up">
+            <img src="assets/img/event/images%20(1).jpg" alt="A student taking part in a cultural celebration" loading="lazy">
+            <figcaption><span>Culture &amp; community</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></figcaption>
+          </figure>
+          <figure class="kcc-life-photo kcc-life-photo-wide" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/event/images%20(7).jpg" alt="KCC students gathered together on campus" loading="lazy">
+            <figcaption><span>Campus connections</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></figcaption>
+          </figure>
+          <figure class="kcc-life-photo kcc-life-photo-short" data-aos="fade-up" data-aos-delay="180">
+            <img src="assets/img/event/images%20(5).jpg" alt="Students and members of the KCC community" loading="lazy">
+            <figcaption><span>Shared moments</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></figcaption>
+          </figure>
+          <div class="kcc-life-callout" data-aos="fade-up" data-aos-delay="250">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <p>Bring your curiosity.<br><em>Find your people.</em></p>
+            <a href="#events">See KCC moments <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Courses Section -->
-
-    <!-- Trainers Index Section -->
-    <section id="trainers-index" class="section trainers-index">
-
+    <section class="kcc-section kcc-events" id="events" aria-labelledby="events-title">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Web Development</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+        <div class="row align-items-end gy-3 kcc-events-heading" data-aos="fade-up">
+          <div class="col-lg-7">
+            <p class="kcc-eyebrow">Gather, celebrate, remember</p>
+            <h2 class="kcc-section-title" id="events-title">Moments at <em>KCC.</em></h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="kcc-section-copy">A collection of moments captured in the college’s existing photo gallery. Event dates and details are shown only when confirmed.</p>
+          </div>
         </div>
-
+        <article class="kcc-event-card" data-aos="fade-up">
+          <div class="kcc-event-copy">
+            <span class="kcc-event-label"><i class="bi bi-camera" aria-hidden="true"></i> From the KCC photo collection</span>
+            <h3>Pinning Ceremony</h3>
+            <p class="kcc-event-date"><i class="bi bi-calendar3" aria-hidden="true"></i> Date not listed</p>
+            <p class="kcc-event-description">A glimpse of the Pinning Ceremony, identified in the project’s photo collection. Add confirmed event information and additional photos here as they become available.</p>
+            <a class="kcc-text-link" href="#contact">Ask about upcoming events <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="kcc-event-photos" aria-label="Pinning Ceremony photo gallery">
+            <a class="kcc-event-photo kcc-event-photo-main glightbox" href="assets/img/event/pinning-ceremony.jpg" data-gallery="pinning-ceremony" aria-label="View Pinning Ceremony photo">
+              <img src="assets/img/event/pinning-ceremony.jpg" alt="A moment from the KCC Pinning Ceremony" loading="lazy">
+              <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></span>
+            </a>
+            <a class="kcc-event-photo glightbox" href="assets/img/event/images.jpg" data-gallery="pinning-ceremony" aria-label="View another KCC ceremony photo">
+              <img src="assets/img/event/images.jpg" alt="A gathering at a KCC ceremony" loading="lazy">
+              <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></span>
+            </a>
+            <a class="kcc-event-photo glightbox" href="assets/img/event/images%20(6).jpg" data-gallery="pinning-ceremony" aria-label="View another KCC community photo">
+              <img src="assets/img/event/images%20(6).jpg" alt="Members of the KCC community together" loading="lazy">
+              <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></span>
+            </a>
+          </div>
+        </article>
+        <p class="kcc-event-update"><i class="bi bi-pencil-square" aria-hidden="true"></i> To add an event, duplicate the event card and update its title, date, description, and gallery images.</p>
       </div>
+    </section>
 
-    </section><!-- /Trainers Index Section -->
+    <section class="kcc-admissions" id="admissions" aria-labelledby="admissions-title">
+      <div class="kcc-admissions-pattern" aria-hidden="true"></div>
+      <div class="container kcc-admissions-inner" data-aos="fade-up">
+        <div>
+          <p class="kcc-eyebrow kcc-eyebrow-light">Your next chapter starts here</p>
+          <h2 id="admissions-title">Ready to take the <em>first step?</em></h2>
+          <p>Connect with KCC for current enrollment information, guidance, and answers to your questions.</p>
+        </div>
+        <a class="kcc-button kcc-button-gold" href="#contact">Inquire Now <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
 
+    <section class="kcc-section kcc-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-up">
+            <p class="kcc-eyebrow">We’re here to help</p>
+            <h2 class="kcc-section-title" id="contact-title">Let’s start a <em>conversation.</em></h2>
+            <p class="kcc-section-copy">Reach out to KCC for program, enrollment, and campus inquiries. For the most current details, please contact the college directly.</p>
+            <div class="kcc-contact-card">
+              <span class="kcc-contact-icon"><i class="bi bi-telephone" aria-hidden="true"></i></span>
+              <div><span class="kcc-contact-label">Call KCC</span><a href="tel:+639941857889">0994 185 7889</a></div>
+              <i class="bi bi-arrow-up-right kcc-contact-arrow" aria-hidden="true"></i>
+            </div>
+            <p class="kcc-contact-note">This phone number appears in an existing KCC information graphic in the project. Please confirm it is current before relying on it.</p>
+          </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="120">
+            <div class="kcc-contact-visual">
+              <img src="assets/img/event/images%20(4).jpg" alt="KCC college information graphic with campus and contact details" loading="lazy">
+              <div class="kcc-contact-visual-tag"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Questions are always<br>a good place to start.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Mentor</span>
+  <footer class="kcc-footer">
+    <div class="container">
+      <div class="row gy-4 kcc-footer-main">
+        <div class="col-lg-4 col-md-6">
+          <a class="kcc-footer-brand" href="#home" aria-label="Kabankalan Catholic College home">
+            <img src="assets/img/KCC-logo.jpg" alt="Kabankalan Catholic College">
           </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+          <p class="kcc-footer-motto">Learning with purpose.<br>Living with faith. Serving with heart.</p>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+        <div class="col-6 col-lg-2 col-md-3">
+          <h2>Explore</h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#about">About KCC</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#student-life">Student Life</a></li>
+            <li><a href="#events">Events</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-6 col-lg-2 col-md-3">
+          <h2>Get in touch</h2>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:+639941857889">Call KCC</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="#" method="post" class="email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
+        <div class="col-lg-4">
+          <div class="kcc-footer-note">
+            <i class="bi bi-quote" aria-hidden="true"></i>
+            <p>“Teach Ye All Nations”</p>
+            <span>Matthew 28:19</span>
+          </div>
         </div>
-
+      </div>
+      <div class="kcc-footer-bottom">
+        <p>© <span id="current-year">2026</span> Kabankalan Catholic College. All rights reserved.</p>
+        <a href="#home">Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a>
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mentor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
-    </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#home" class="kcc-back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
