@@ -2441,7 +2441,8 @@ section,
   overflow: hidden;
   color: #fff;
   background-image:
-    linear-gradient(90deg, rgba(65, 5, 25, 0.6) 0%, rgba(65, 5, 25, 0.48) 56%, rgba(65, 5, 25, 0.38) 100%),
+    linear-gradient(90deg, rgba(42, 5, 17, 0.88) 0%, rgba(42, 5, 17, 0.84) 56%, rgba(42, 5, 17, 0.8) 100%),
+    linear-gradient(0deg, rgba(20, 3, 9, 0.2), rgba(20, 3, 9, 0.2)),
     url("../img/images.webp");
   background-size: cover;
   background-position: center center;
@@ -2454,6 +2455,7 @@ section,
   z-index: 1;
   padding-top: 100px;
   padding-bottom: 110px;
+  text-shadow: 0 2px 12px rgba(20, 0, 7, 0.35);
 }
 
 .kcc-eyebrow {
