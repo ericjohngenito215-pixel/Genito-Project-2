@@ -2436,36 +2436,33 @@ section,
 .kcc-hero {
   position: relative;
   display: flex;
-  min-height: min(760px, calc(100vh - 96px));
+  min-height: clamp(580px, calc(100vh - 96px), 760px);
   align-items: center;
   overflow: hidden;
   color: #fff;
-  background: var(--kcc-burgundy-deep);
+  background: linear-gradient(125deg, var(--kcc-burgundy-deep), var(--kcc-burgundy) 68%, #511426);
   scroll-margin-top: 105px;
 }
 
-.kcc-hero-image,
-.kcc-hero-shade {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .kcc-hero-image {
+  position: absolute;
+  top: 50%;
+  right: max(calc((100vw - 1140px) / 2), 5vw);
   z-index: 0;
-  object-fit: cover;
-  object-position: center 47%;
-}
-
-.kcc-hero-shade {
-  z-index: 1;
-  background: linear-gradient(90deg, rgba(33, 12, 17, 0.86) 0%, rgba(51, 15, 24, 0.75) 42%, rgba(46, 18, 19, 0.2) 100%), linear-gradient(0deg, rgba(36, 12, 17, 0.23), rgba(36, 12, 17, 0.05));
+  display: block;
+  width: 547px;
+  max-width: 48vw;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  box-shadow: 0 18px 40px rgba(20, 7, 11, 0.22);
+  transform: translateY(-50%);
 }
 
 .kcc-hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding-top: 100px;
   padding-bottom: 110px;
 }
@@ -2555,7 +2552,7 @@ section,
 
 .kcc-hero-note {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   right: max(calc((100vw - 1140px) / 2), 5vw);
   bottom: 48px;
   display: flex;
@@ -3428,6 +3425,22 @@ section,
     gap: 18px;
   }
 
+  .kcc-hero-image {
+    top: auto;
+    right: 4vw;
+    bottom: 26px;
+    width: clamp(280px, 38vw, 420px);
+    transform: none;
+  }
+
+  .kcc-hero-content {
+    padding-bottom: 340px;
+  }
+
+  .kcc-hero-note {
+    display: none;
+  }
+
   .kcc-nav {
     gap: 19px;
   }
@@ -3506,12 +3519,20 @@ section,
   }
 
   .kcc-hero {
-    min-height: 690px;
+    min-height: clamp(610px, calc(100vh - 88px), 720px);
+  }
+
+  .kcc-hero-image {
+    top: auto;
+    right: 5vw;
+    bottom: 20px;
+    width: clamp(180px, 30vw, 260px);
+    transform: none;
   }
 
   .kcc-hero-content {
     padding-top: 85px;
-    padding-bottom: 110px;
+    padding-bottom: 245px;
   }
 
   .kcc-hero-note {
@@ -3551,17 +3572,13 @@ section,
     min-height: 660px;
   }
 
-  .kcc-hero-image {
-    object-position: 58% center;
-  }
-
-  .kcc-hero-shade {
-    background: linear-gradient(90deg, rgba(33, 12, 17, 0.86), rgba(51, 15, 24, 0.48)), linear-gradient(0deg, rgba(36, 12, 17, 0.25), transparent);
-  }
-
   .kcc-hero-content {
     padding-top: 75px;
-    padding-bottom: 85px;
+    padding-bottom: 225px;
+  }
+
+  .kcc-hero-image {
+    width: clamp(170px, 32vw, 235px);
   }
 
   .kcc-hero h1 {
@@ -3682,12 +3699,18 @@ section,
   }
 
   .kcc-hero {
-    min-height: 620px;
+    min-height: clamp(590px, calc(100vh - 82px), 680px);
   }
 
   .kcc-hero-content {
     padding-top: 63px;
-    padding-bottom: 70px;
+    padding-bottom: 190px;
+  }
+
+  .kcc-hero-image {
+    right: 15px;
+    bottom: 15px;
+    width: 180px;
   }
 
   .kcc-hero h1 {
