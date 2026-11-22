@@ -2436,28 +2436,17 @@ section,
 .kcc-hero {
   position: relative;
   display: flex;
-  min-height: clamp(580px, calc(100vh - 96px), 760px);
+  min-height: max(85vh, calc(100vh - 96px));
   align-items: center;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(125deg, var(--kcc-burgundy-deep), var(--kcc-burgundy) 68%, #511426);
+  background-image:
+    linear-gradient(90deg, rgba(65, 5, 25, 0.6) 0%, rgba(65, 5, 25, 0.48) 56%, rgba(65, 5, 25, 0.38) 100%),
+    url("../img/images.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   scroll-margin-top: 105px;
-}
-
-.kcc-hero-image {
-  position: absolute;
-  top: 50%;
-  right: max(calc((100vw - 1140px) / 2), 5vw);
-  z-index: 0;
-  display: block;
-  width: 547px;
-  max-width: 48vw;
-  height: auto;
-  object-fit: contain;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 5px;
-  box-shadow: 0 18px 40px rgba(20, 7, 11, 0.22);
-  transform: translateY(-50%);
 }
 
 .kcc-hero-content {
@@ -3425,18 +3414,6 @@ section,
     gap: 18px;
   }
 
-  .kcc-hero-image {
-    top: auto;
-    right: 4vw;
-    bottom: 26px;
-    width: clamp(280px, 38vw, 420px);
-    transform: none;
-  }
-
-  .kcc-hero-content {
-    padding-bottom: 340px;
-  }
-
   .kcc-hero-note {
     display: none;
   }
@@ -3519,25 +3496,12 @@ section,
   }
 
   .kcc-hero {
-    min-height: clamp(610px, calc(100vh - 88px), 720px);
-  }
-
-  .kcc-hero-image {
-    top: auto;
-    right: 5vw;
-    bottom: 20px;
-    width: clamp(180px, 30vw, 260px);
-    transform: none;
+    min-height: max(85vh, calc(100vh - 88px));
   }
 
   .kcc-hero-content {
     padding-top: 85px;
-    padding-bottom: 245px;
-  }
-
-  .kcc-hero-note {
-    right: 5vw;
-    bottom: 28px;
+    padding-bottom: 85px;
   }
 
   .kcc-section {
@@ -3569,16 +3533,12 @@ section,
   }
 
   .kcc-hero {
-    min-height: 660px;
+    min-height: max(85vh, calc(100vh - 88px));
   }
 
   .kcc-hero-content {
     padding-top: 75px;
-    padding-bottom: 225px;
-  }
-
-  .kcc-hero-image {
-    width: clamp(170px, 32vw, 235px);
+    padding-bottom: 80px;
   }
 
   .kcc-hero h1 {
@@ -3699,18 +3659,12 @@ section,
   }
 
   .kcc-hero {
-    min-height: clamp(590px, calc(100vh - 82px), 680px);
+    min-height: max(82vh, calc(100vh - 82px));
   }
 
   .kcc-hero-content {
-    padding-top: 63px;
-    padding-bottom: 190px;
-  }
-
-  .kcc-hero-image {
-    right: 15px;
-    bottom: 15px;
-    width: 180px;
+    padding-top: 68px;
+    padding-bottom: 72px;
   }
 
   .kcc-hero h1 {
