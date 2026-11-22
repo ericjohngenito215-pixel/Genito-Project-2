@@ -2301,7 +2301,7 @@ section,
 }
 
 .kcc-header-inner {
-  min-height: 88px;
+  min-height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2317,11 +2317,10 @@ section,
 
 .kcc-brand img {
   display: block;
-  width: 205px;
-  height: 66px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 4px;
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 3px;
 }
 
 .kcc-nav {
@@ -2423,11 +2422,12 @@ section,
 .kcc-hero {
   position: relative;
   display: flex;
-  min-height: min(760px, calc(100vh - 88px));
+  min-height: min(760px, calc(100vh - 96px));
   align-items: center;
   overflow: hidden;
   color: #fff;
   background: var(--kcc-burgundy-deep);
+  scroll-margin-top: 105px;
 }
 
 .kcc-hero-image,
@@ -2557,7 +2557,7 @@ section,
 
 .kcc-section {
   padding: 112px 0;
-  scroll-margin-top: 86px;
+  scroll-margin-top: 105px;
 }
 
 .kcc-about {
@@ -3085,6 +3085,7 @@ section,
   overflow: hidden;
   color: #fff;
   background: var(--kcc-burgundy);
+  scroll-margin-top: 105px;
 }
 
 .kcc-admissions-pattern {
@@ -3271,9 +3272,9 @@ section,
 
 .kcc-footer-brand img {
   display: block;
-  width: 205px;
-  height: 65px;
-  object-fit: cover;
+  width: 160px;
+  height: auto;
+  object-fit: contain;
   border-radius: 3px;
 }
 
@@ -3409,18 +3410,18 @@ section,
   }
 
   .kcc-brand img {
-    width: 180px;
+    width: 160px;
   }
 }
 
 @media (max-width: 991px) {
   .kcc-header-inner {
-    min-height: 76px;
+    min-height: 88px;
   }
 
   .kcc-brand img {
-    width: 190px;
-    height: 61px;
+    width: 150px;
+    height: auto;
   }
 
   .kcc-menu-toggle {
@@ -3640,12 +3641,12 @@ section,
 
 @media (max-width: 480px) {
   .kcc-header-inner {
-    min-height: 70px;
+    min-height: 82px;
   }
 
   .kcc-brand img {
-    width: 170px;
-    height: 55px;
+    width: 140px;
+    height: auto;
   }
 
   .kcc-hero {

@@ -15,6 +15,7 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
+    if (!selectHeader) return;
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
@@ -80,13 +81,15 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
@@ -146,5 +149,60 @@
       form.reset();
     });
   });
+
+  /**
+   * KCC landing page navigation
+   */
+  const kccMenuToggle = document.querySelector('.kcc-menu-toggle');
+  const kccNav = document.querySelector('.kcc-nav');
+
+  if (kccMenuToggle && kccNav) {
+    function closeKccMenu() {
+      kccNav.classList.remove('is-open');
+      kccMenuToggle.setAttribute('aria-expanded', 'false');
+      kccMenuToggle.setAttribute('aria-label', 'Open navigation menu');
+      kccMenuToggle.innerHTML = '<i class="bi bi-list" aria-hidden="true"></i>';
+    }
+
+    kccMenuToggle.addEventListener('click', function() {
+      const isOpen = kccNav.classList.toggle('is-open');
+      kccMenuToggle.setAttribute('aria-expanded', String(isOpen));
+      kccMenuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      kccMenuToggle.innerHTML = isOpen
+        ? '<i class="bi bi-x-lg" aria-hidden="true"></i>'
+        : '<i class="bi bi-list" aria-hidden="true"></i>';
+    });
+
+    kccNav.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', closeKccMenu);
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeKccMenu();
+      }
+    });
+
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 991) {
+        closeKccMenu();
+      }
+    });
+  }
+
+  const kccBackToTop = document.querySelector('.kcc-back-to-top');
+  if (kccBackToTop) {
+    function toggleKccBackToTop() {
+      kccBackToTop.classList.toggle('is-visible', window.scrollY > 420);
+    }
+
+    window.addEventListener('load', toggleKccBackToTop);
+    document.addEventListener('scroll', toggleKccBackToTop);
+  }
+
+  const currentYear = document.querySelector('#current-year');
+  if (currentYear) {
+    currentYear.textContent = String(new Date().getFullYear());
+  }
 
 })();
