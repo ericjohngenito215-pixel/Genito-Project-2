@@ -2324,6 +2324,19 @@ section,
   background: #fff;
 }
 
+.kcc-brand {
+  gap: 12px;
+}
+
+.kcc-header-name {
+  max-width: 175px;
+  color: var(--kcc-burgundy-deep);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .kcc-nav {
   display: flex;
   align-items: center;
@@ -3281,6 +3294,19 @@ section,
   object-fit: contain;
   border-radius: 50%;
   background: #fff;
+}
+
+.kcc-footer-brand {
+  gap: 14px;
+}
+
+.kcc-footer-name {
+  max-width: 190px;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .kcc-footer-motto {
